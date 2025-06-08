@@ -2,10 +2,8 @@ import os
 import requests
 import time
 from bs4 import BeautifulSoup
-from huggingface_hub import HfApi, HfFolder, Repository, upload_file
 
 BASE_URL = "https://rechtspraak.sr"
-SEARCH_URL = f"{BASE_URL}/zoekresultaat"
 AJAX_URL = f"{BASE_URL}/wp-content/themes/understrap/templates/loadmore_search_results.php"
 DATASET_REPO_ID = "vGassen/Surinam-Dutch-Court-Cases"
 SOURCE = "Uitsprakendatabank van het Hof van Justitie van Suriname"
